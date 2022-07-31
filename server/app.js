@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ limit: "32mb", extended: "true" }));
 app.use(cors());
 app.use("/stories", storyRoutes);
 
-const MONGO_URI = "mongodb+srv://@cluster0.sndbs.mongodb.net/?retryWrites=true&w=majority";
+const MONGO_URI = "mongodb+srv://DuarteB:MongoDB0304password@cluster0.sndbs.mongodb.net/?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 3001;
 
 const connectDB = async () => {
